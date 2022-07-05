@@ -1,0 +1,565 @@
+/* color variables */
+:root {
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --light-cyan: hsl(176, 50%, 70%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+    --light-white-text-2: hsl(0, 0%, 57%);
+    --white-text: hsl(0, 0%, 100%);
+    --light-white-text: hsl(0, 0%, 89%);
+}
+
+/* base properties */
+body {
+    font-family: 'Commissioner', sans-serif;
+    background-color: var(--light-white-text);
+    padding-bottom: 50px;
+}
+
+header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.nav-link {
+    font-family: 'Commissioner', sans-serif;
+    color: var(--white-text);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--white-text);
+    text-decoration: underline;
+}
+
+.logo-2 {
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    background-color: var(--white-text);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.section-1 {
+    margin-top: -70px;
+}
+
+.section-3 {
+    margin-top: 20px;
+    padding-left: 45px;
+    padding-right: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+.selection-modal .back,
+.pledge h5,
+.pledge-2 h5 {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.selection-modal .back {
+    font-size: 1.1rem;
+}
+
+.pledge-2 h5 {
+    font-size: 0.9rem;
+}
+
+.pledge h5 {
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+h6 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.section-1 p,
+.section-2 p,
+.section-3 p,
+.success-modal p,
+.selection-modal .support,
+.selection-modal .choose,
+.selection-modal .pledge-text {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.selection-modal .support {
+    margin-top: 7px;
+}
+
+.success-modal p {
+    margin-top: 20px;
+}
+
+.section-3 p {
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.icon-bookmark {
+    width: 50px;
+    margin-left: -20px;
+    padding-right: 10px;
+    margin-top: -2px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-div button:first-child,
+.reward-btn {
+    background-color: var(--moderate-cyan);
+    color: var(--white-text);
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.btn-div button:first-child:hover,
+.reward-btn:hover,
+.got-btn:hover {
+    background-color: var(--dark-cyan);
+}
+
+.btn-desk {
+    font-weight: 700;
+    color: var(--dark-gray);
+}
+
+.btn-div button:last-child:hover,
+.btn-desk:hover {
+    opacity: 0.9;
+}
+
+button {
+    border-radius: 1rem;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+
+.section-2 {
+    margin-top: 20px;
+}
+
+.progress-div {
+    border-radius: 1rem;
+    background-color: var(--light-white-text);
+}
+
+.progress {
+    border-radius: 1rem;
+    width: 70%;
+    background-color: var(--dark-cyan);
+}
+
+.section-4,
+.selection-part {
+    border: 2px solid var(--light-white-text);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-4-a p {
+    color: var(--dark-cyan);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.left-div {
+    display: flex;
+}
+
+.left-div h4 {
+    padding-right: 5px;
+}
+
+.section-4-a .h4,
+.section-4-b .h4-2,
+.section-4 .p2 {
+    color: var(--light-white-text-2);
+}
+
+.section-4-a .p {
+    color: var(--light-cyan);
+}
+
+.out-btn {
+    background-color: var(--light-white-text-2);
+}
+
+.out-btn:hover {
+    background-color: var(--light-white-text-2);
+}
+
+.success-modal,
+.selection-modal {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--white-text);
+}
+
+.success-modal {
+    margin-top: 25px;
+}
+
+.success-modal p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.got-btn {
+    background-color: var(--moderate-cyan);
+    color: var(--white-text);
+    font-weight: 500;
+    border-radius: 1rem;
+    margin-top: 15px;
+}
+
+.got-btn {
+    margin-bottom: 15px;
+}
+
+.selection-modal {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.back-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-modal img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.pledge {
+    display: flex;
+}
+
+input {
+    width: 20px;
+}
+
+.radio {
+    height: 30px;
+}
+
+.one {
+    display: flex;
+}
+
+.enter {
+    color: var(--light-white-text-2);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btndiv button:first-child {
+    border-radius: 1rem;
+    border: 2px solid var(--light-white-text);
+    background-color: var(--white-text);
+    color: var(--black);
+}
+
+.btndiv button:first-child:hover {
+    border: 2px solid var(--dark-cyan);
+}
+
+.btndiv button:first-child span {
+    color: var(--light-white-text-2);
+    padding-right: 10px;
+}
+
+.btndiv button:last-child {
+    background-color: var(--moderate-cyan);
+    color: var(--white-text);
+}
+
+.btndiv button:last-child:hover {
+    background-color: var(--dark-cyan);
+}
+
+
+/* for larger screens */
+@media screen and (min-width: 900px) {
+    header {
+        background-image: url("../images/image-hero-desktop.jpg");
+    }
+
+    .navbar-brand {
+        padding-left: 80px;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .selection-modal {
+        width: 50%;
+    }
+
+    .success-modal {
+        width: 40%;
+    }
+
+    .section-2 {
+        padding-top: 30px;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+
+    button {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-2-a {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -20px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .section-2-b {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .num-div {
+        border-right: 1px solid var(--light-white-text);
+        padding-right: 40px;
+    }
+
+    .section-3 {
+        text-align: left;
+        padding-top: 35px;
+    }
+
+    .section-4-a,
+    .section-4-b {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .selection-modal .choose {
+        margin-left: 28px;
+    }
+
+    .pledge-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pledge-2-a {
+        display: flex;
+    }
+
+    .pledge-2-a h5 {
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+
+    .pledge-2-a h5:last-child {
+        margin-left: 30px;
+        color: var(--moderate-cyan);
+    }
+
+    .selection-modal .pledge-text {
+        margin-left: 32px;
+        padding-bottom: 15px;
+    }
+
+    .selected-pledge {
+        border-top: 1px solid var(--light-white-text);
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .left {
+        margin-top: -3px;
+        margin-left: 10px;
+        color: var(--light-white-text-2);
+    }
+
+    .enter {
+        padding-top: 10px;
+    }
+
+    .selection-modal {
+        display: none;
+        position: absolute;
+        top: 20vh;
+        left: 335px;
+    }
+     .success-modal {
+         display: none;
+        position: absolute;
+        top: 20vh;
+        left: 395px; 
+     }
+}
+
+/* for lesser screens */
+@media screen and (max-width: 900px) {
+    header {
+        background-image: url("../images/image-hero-mobile.jpg");
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .success-modal,
+    .selection-modal {
+        width: 85%;
+    }
+
+    .btn-desk {
+        display: none;
+    }
+
+    .btn-div button:first-child {
+        width: 70%;
+        border-radius: 1rem;
+    }
+
+    .bookmark {
+        width: 50px;
+        margin-top: -5px;
+    }
+
+    .btn-mobile {
+        width: 30%;
+        background-color: var(--white-text);
+    }
+
+    .section-2 {
+        padding-top: 30px;
+    }
+
+    .section-3 {
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    .reward-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .got-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .pledge-2-a {
+        display: flex;
+    }
+
+    .flex {
+        margin-left: 15px;
+    }
+
+    .selection-modal .choose,
+    .selection-modal .pledge-text {
+        margin-top: 20px;
+    }
+
+    .flex h5:last-child {
+        color: var(--moderate-cyan);
+        font-weight: 500;
+    }
+
+    .left {
+        margin-left: 10px;
+        color: var(--light-white-text-2);
+    }
+
+    .selected-pledge {
+        border-top: 1px solid var(--light-white-text);
+        padding-top: 15px;
+    }
+
+    .enter {
+        text-align: center;
+    }
+
+    .btndiv button {
+        margin-top: 15px;
+        width: 45%;
+    }
+
+    .btndiv {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .selection-modal,
+    .success-modal {
+        display: none;
+        position: absolute;
+        top: 20vh;
+        left: 30px;
+    }
+
+}
